@@ -1,0 +1,30 @@
+.main-video {
+    &__player {
+        width: 100%;
+        height: auto;
+    }
+
+    &__title {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    &__details {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    &__info, &__stats {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__channel, &__timestamp, &__views, &__likes {
+        margin: 5px 0;
+    }
+
+    &__description {
+        margin-top: 10px;
+    }
+}
