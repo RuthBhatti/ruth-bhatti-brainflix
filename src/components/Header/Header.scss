@@ -1,0 +1,43 @@
+@use "/src/styles/variables.scss" as *;
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+
+    &__logo {
+        height: 40px;
+    }
+
+    &__search {
+        flex-grow: 1;
+        margin: 0 20px;
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    &__upload {
+        display: flex;
+        align-items: center;
+    }
+
+    &__button {
+        padding: 10px;
+        color: $secondary-color;
+        border: none;
+        cursor: pointer;
+        border-radius: .3rem;
+        background-color: $primary-color;
+        
+    }
+
+    &__profile {
+        height: 2rem;
+        width: 2rem;
+        margin-left: 10px;
+        border-radius: 50%;
+    }
+}
