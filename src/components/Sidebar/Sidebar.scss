@@ -1,0 +1,38 @@
+.sidebar {
+    &__title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+    }
+
+    &__item {
+        display: flex;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    &__thumbnail {
+        width: 120px;
+        height: 68px;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 16px;
+    }
+
+    &__channel {
+        font-size: 14px;
+        color: gray;
+    }
+}
