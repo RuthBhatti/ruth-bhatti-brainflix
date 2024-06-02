@@ -12,7 +12,7 @@ function Sidebar({ videos, currentVideoId, onVideoSelect }) {
                         <li key={video.id} className="sidebar__item" onClick={() => onVideoSelect(video.id)}>
                             <img src={video.image} alt={video.title} className="sidebar__thumbnail" />
                             <div className="sidebar__details">
-                                <h3 className="sidebar__title">{video.title}</h3>
+                                <h3 className="sidebar__titles">{video.title}</h3>
                                 <p className="sidebar__channel">{video.channel}</p>
                             </div>
                         </li>

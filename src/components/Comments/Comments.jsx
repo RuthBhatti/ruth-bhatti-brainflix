@@ -4,7 +4,7 @@ import './Comments.scss';
 function Comments({ comments }) {
     return (
         <div className="comments">
-            <h2 className="comments__title">Comments</h2>
+            <h2 className="comments__title"></h2>
             <ul className="comments__list">
                 {comments.map(comment => (
                     <li key={comment.id} className="comments__item">

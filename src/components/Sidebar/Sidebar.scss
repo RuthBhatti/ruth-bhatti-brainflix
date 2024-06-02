@@ -2,11 +2,14 @@
     &__title {
         font-size: 20px;
         margin-bottom: 10px;
+        border-top: .0625rem solid lightgrey;
+
     }
 
     &__list {
         list-style: none;
         padding: 0;
+        border-top: none;
     }
 
     &__item {
@@ -27,7 +30,7 @@
         flex-direction: column;
     }
 
-    &__title {
+    &__titles {
         font-size: 16px;
     }
 
