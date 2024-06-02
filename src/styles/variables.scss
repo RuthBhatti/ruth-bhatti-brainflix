@@ -1,9 +1,30 @@
 // Define breakpoints as variables for easy maintenance
 
-$breakpoint-tablet: 48rem;
-$breakpoint-desktop: 80rem;
+@mixin tablet {
+    @media (max-width: 48rem) {
+        @content;
+    }
+}
+    @mixin desktop {
+        @media (min-width: 80rem) {
+            @content;
+        }
+    }
 
-//primary colors//
-$primary-color: #0095ff;
-$secondary-color: #ffffff;
-$font-family: 'Avenir Next', sans-serif;
+    $breakpoint-tablet: 48rem;
+    $breakpoint-desktop: 80rem;
+
+    //primary colors//
+    $primary-color: #0095ff;
+    $secondary-color: #ffffff;
+    $font-family: 'Avenir Next', sans-serif;
+
+    $brainflix-black: #323232;
+    $brainflix-blue: #0095FF;
+    $silver: #AFAFAF;
+    $white: #FFFFFF;
+
+    $brainflix-dark-black: #000000;
+    $brainflix-dark-blue: #0065AD;
+    $mercury: #E1E1E1;
+    $alabaster: #FAFAFA;

@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    margin: .625rem 1rem;
     background-color: $secondary-color;
     flex-direction: column;
 
@@ -31,6 +31,7 @@
 
     &__search-container {
         display: flex;
+        width: 12rem;
         align-items: center;
         background-color: #f1f1f1;
         border-radius: .25rem;
@@ -53,8 +54,8 @@
     }
 
     &__button {
-        gap: 5.5rem;
-        width: 18rem;
+        gap: 5rem;
+        width: 17rem;
         display: flex;
         align-items: center;
         padding: 15px 0px;
@@ -76,9 +77,17 @@
         }
     }
 
-    &__profile {
+    &__profile1 {
         height: 2.5rem;
         width: 2.5rem;
         border-radius: 50%;
+
+    }
+    &__profile2 {
+        display: none;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+        
     }
 }

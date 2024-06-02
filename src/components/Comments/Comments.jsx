@@ -10,8 +10,10 @@ function Comments({ comments }) {
                     <li key={comment.id} className="comments__item">
                         <div className="comments__avatar"></div>
                         <div className="comments__content">
-                            <p className="comments__name">{comment.name}</p>
-                            <p className="comments__date">{new Date(comment.timestamp).toLocaleDateString()}</p>
+                            <div className="flex-date">
+                                <p className="comments__name">{comment.name}</p>
+                                <p className="comments__date">{new Date(comment.timestamp).toLocaleDateString()}</p>
+                            </div>
                             <p className="comments__text">{comment.comment}</p>
                         </div>
                     </li>

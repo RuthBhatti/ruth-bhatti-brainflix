@@ -1,101 +1,108 @@
-// @import './variables';
-.comments__header {
+@import '/src/styles/variables.scss';
 
-    margin-bottom: 1em;
+.textarea__header {
+    font-family: $font-family;
+    font-weight: 500;
     text-align: left;
-    padding: 1.25rem 1.25rem;
+    margin: .5em;
+
 }
 
-.comments__form-container {
+.textarea__form-container {
+    font-family: $font-family;
     display: flex;
     align-items: flex-start;
     gap: 1em;
-    margin-bottom: 2em;
-    padding-left: 1.125rem;
-    padding-right: 2.8rem;
+    margin: 1em 1.125rem 2.8rem;
 }
 
-.comments__avatar {
-    width: 3.75rem;
-    height: 3.75rem;
-    border-radius: 50%;
-}
-
-.comments__form {
+.textarea__form {
+    font-family: $font-family;
     flex-grow: 1;
 }
 
-.comments__label {
+.textarea__label {
+    font-family: $font-family;
     display: block;
     margin-bottom: 0.5em;
-    // color: $silver;
     text-transform: uppercase;
-    // font-weight: $subheader-font-weight;
+    color: lightgray;
 }
 
-.comments__input,
-.comments__textarea {
-    width: 100%;
+.textarea__input,
+.textarea__textarea {
+    font-family: $font-family;
+    height: 8rem;
+    width: 90%;
     padding: 0.5em;
     margin-bottom: 1em;
-    // border: .0625rem solid $Mercury;
     border-radius: .3125rem;
+    border-color: lightgray;
+
 }
 
 .textarea {
+    font-family: $font-family;
     min-width: 6.25rem;
 }
 
-.comments__button {
-    width: 100%;
-    // background-color: $bandSite-Black;
-    color: white;
-    padding: 0.7em 1.5em;
+.textarea__button {
+    gap: 3rem;
+    width: 13.5rem;
+    display: flex;
+    align-items: center;
+    padding: 15px .5rem;
+    color: $secondary-color;
     border: none;
-    border-radius: .3125rem;
     cursor: pointer;
-}
+    border-radius: 8px;
+    background-color: $primary-color;
+    font-size: 1rem;
+    text-transform: uppercase;
 
-.comments__button:hover {
-    // background-color: $BandSite-DarkBlack;
-}
+    &__icon {
+        height: 20px;
+        margin-right: 10px;
+    }
 
-.comments__list {
-    padding-top: 1em;
-    padding: 1rem 1.875rem 0;
+    span {
+        display: inline-block;
+    }
 }
 
 .comment {
-    // border-top: 0.0313rem solid $Mercury;
     display: flex;
+    font-family: $font-family;
     align-items: flex-start;
     gap: 1em;
     padding: 1em 0;
-    // border-bottom: .0625rem solid $Mercury;
 }
 
-.comment__avatar {
+.textarea__avatar {
+    font-family: $font-family;
     width: 3.125rem;
     height: 3.125rem;
     border-radius: 50%;
 }
 
 .comment__content {
+    font-family: $font-family;
     flex-grow: 1;
 }
 
 .comment__name {
-    // font-weight: $font-weight-body;
     margin: 0;
+    font-family: $font-family;
 }
 
 .comment__date {
-    // color: $silver;
     margin: 0;
+    font-family: $font-family;
 }
 
 .comment__text {
     margin: 0.5em 0 0 0;
+    font-family: $font-family;
 }
 
 .comment__header {
@@ -103,4 +110,5 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: .625rem;
+    font-family: $font-family;
 }

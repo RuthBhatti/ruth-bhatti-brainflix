@@ -16,13 +16,13 @@ function Header() {
                     <img src={searchIcon} alt="Search Icon" className="header__search-icon" />
                     <input type="text" className="header__search" placeholder="Search" />
                 </div>
-                <img src={profileImage} alt="Profile" className="header__profile" />
+                <img src={profileImage} alt="Profile" className="header__profile1" />
             </div>
             <div className="header__right">
                 <button className="header__button">
                     <img src={uploadIcon} alt="Upload Icon" className="header__upload-icon" />
-                    <span className="header__button-text">UPLOAD</span>
-                </button>
+                    UPLOAD
+                </button><img src={profileImage} alt="Profile" className="header__profile2" />
             </div>
         </header>
     );

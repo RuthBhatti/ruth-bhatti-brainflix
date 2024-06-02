@@ -1,8 +1,17 @@
+@import '/src/styles/variables.scss';
+
 .sidebar {
+    font-family: $font-family;
+    margin: 0.625rem 1rem;
+
     &__title {
-        font-size: 20px;
-        margin-bottom: 10px;
-        border-top: .0625rem solid lightgrey;
+        font-size: .9375rem;
+        margin-bottom: .625rem;
+        border-top: 0.0625rem solid lightgrey;
+        padding-top: 1rem;
+        color: lightgray;
+        text-transform: uppercase;
+        font-weight: 400;
 
     }
 
@@ -14,15 +23,16 @@
 
     &__item {
         display: flex;
-        margin-bottom: 10px;
+        margin-bottom: .625rem;
         cursor: pointer;
     }
 
     &__thumbnail {
-        width: 120px;
-        height: 68px;
+        width: 7.5rem;
+        height: 4.25rem;
         object-fit: cover;
-        margin-right: 10px;
+        margin-right: .625rem;
+        border-radius: .4rem;
     }
 
     &__details {
@@ -31,11 +41,13 @@
     }
 
     &__titles {
-        font-size: 16px;
+        font-size: .75rem;
+        font-weight: 500;
+        margin: 0;
     }
 
     &__channel {
-        font-size: 14px;
-        color: gray;
+        font-size: .875rem;
+        // color: gray;
     }
 }

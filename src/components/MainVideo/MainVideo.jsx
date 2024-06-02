@@ -1,5 +1,7 @@
 import React from 'react';
 import './MainVideo.scss';
+import viewsIcon from '../../assets/Icons/views.svg';
+import likesIcon from '../../assets/Icons/likes.svg';
 
 function MainVideo({ video }) {
     return (
@@ -14,8 +16,14 @@ function MainVideo({ video }) {
                     <p className="main-video__timestamp">{new Date(video.timestamp).toLocaleDateString()}</p>
                 </div>
                 <div className="main-video__stats">
-                    <p className="main-video__views">{video.views} views</p>
-                    <p className="main-video__likes">{video.likes} likes</p>
+                    <div className="main-video__stat">
+                        <img src={viewsIcon} alt="Views Icon" className="main-video__icon" />
+                        <p className="main-video__views">{video.views}</p>
+                    </div>
+                    <div className="main-video__stat">
+                        <img src={likesIcon} alt="Likes Icon" className="main-video__icon" />
+                        <p className="main-video__likes">{video.likes}</p>
+                    </div>
                 </div>
             </div>
             <p className="main-video__description">{video.description}</p>
@@ -24,3 +32,4 @@ function MainVideo({ video }) {
 }
 
 export default MainVideo;
+
