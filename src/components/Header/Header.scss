@@ -8,6 +8,15 @@
     background-color: $secondary-color;
     flex-direction: column;
 
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: .625rem 1rem;
+        background-color: $secondary-color;
+        flex-direction: row;
+    }
+
     &__left {
         display: flex;
         align-items: center;
@@ -83,11 +92,12 @@
         border-radius: 50%;
 
     }
+
     &__profile2 {
         display: none;
         height: 2.5rem;
         width: 2.5rem;
         border-radius: 50%;
-        
+
     }
 }

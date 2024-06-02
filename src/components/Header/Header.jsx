@@ -22,7 +22,7 @@ function Header() {
                 <button className="header__button">
                     <img src={uploadIcon} alt="Upload Icon" className="header__upload-icon" />
                     UPLOAD
-                </button><img src={profileImage} alt="Profile" className="header__profile2" />
+                </button><img src={profileImage} alt="Profile" className="header__profile2" /><img src={profileImage} alt="Profile" className="header__profile1" />
             </div>
         </header>
     );
