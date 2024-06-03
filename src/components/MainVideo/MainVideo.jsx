@@ -5,7 +5,6 @@ import VideoPlayer from '../VideoPlayer/VideoPlayer';
 function MainVideo({ video }) {
     return (
         <div className="main-video">
-        {/* //     <VideoPlayer video={video} /> */}
             <h1 className="main-video__title">{video.title}</h1>
             <div className="main-video__details">
                 <div className="main-video__info">
