@@ -5,6 +5,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 import Comments from './components/Comments/Comments';
 import videoDetails from './data/video-details.json';
 import TaxtArea from './components/textarea/TaxtArea';
+import VideoPlayer from './components/VideoPlayer/VideoPlayer';
 import './App.scss';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="app">
       <Header />
+      <VideoPlayer video={currentVideo} />
       <div className='view'>
         <div className="app__content">
           <MainVideo video={currentVideo} />
