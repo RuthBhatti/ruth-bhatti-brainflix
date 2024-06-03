@@ -26,6 +26,7 @@ function Header() {
                 <img src={profileImage} alt="Profile" className="header__profile" />
             </div>
         </header>
+        
     );
 }
 

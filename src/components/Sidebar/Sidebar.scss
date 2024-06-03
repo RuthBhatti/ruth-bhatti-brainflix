@@ -5,6 +5,11 @@
     font-family: $font-family;
     margin: 0.625rem 1rem;
 
+    @include desktop{
+        width: 50%;
+    }
+
+
     &__title {
         font-size: .9375rem;
         margin-bottom: .625rem;
@@ -51,4 +56,5 @@
         font-size: .875rem;
         // color: gray;
     }
+
 }

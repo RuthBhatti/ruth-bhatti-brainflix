@@ -2,6 +2,7 @@
 
 .comments {
     font-family: $font-family;
+
     &__title {
         font-size: 20px;
         margin-bottom: 10px;
@@ -11,6 +12,9 @@
         list-style: none;
         margin: 1rem;
         padding: 0;
+        @include desktop{
+            width: 50%;
+        }
     }
 
     &__item {

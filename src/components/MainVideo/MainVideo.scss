@@ -51,11 +51,12 @@
             flex-direction: row;
             margin-bottom: 1rem;
         }
-        @include desktop{
+
+        @include desktop {
             display: flex;
             gap: 1rem;
             flex-direction: row;
-            margin-bottom: 1rem; 
+            margin-bottom: 1rem;
         }
     }
 
@@ -88,5 +89,11 @@
 
     &__description {
         margin: .625rem 1rem;
+    }
+}
+
+.desktop-view {
+    @include desktop {
+        width: 50%;
     }
 }
