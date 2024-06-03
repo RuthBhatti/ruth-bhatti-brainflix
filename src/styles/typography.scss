@@ -1,7 +1,6 @@
 @import './variables';
 
-body {
-   $font-family: 'Avenir Next', sans-serif;
+$font-family: 'Avenir Next', sans-serif;
 $font-weight-regular: 400;
 $font-weight-demi: 600;
 $font-weight-bold: 700;
@@ -16,5 +15,4 @@ $line-height-body-copy: 20px;
 $font-size-labels-buttons: 12px;
 $line-height-labels-buttons: 20px;
 $font-size-button: 18px;
-}
 

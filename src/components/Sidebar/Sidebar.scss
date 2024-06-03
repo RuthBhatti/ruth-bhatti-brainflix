@@ -1,4 +1,5 @@
 @import '/src/styles/variables.scss';
+@import '/src/styles/typography.scss';
 
 .sidebar {
     font-family: $font-family;
@@ -7,9 +8,9 @@
     &__title {
         font-size: .9375rem;
         margin-bottom: .625rem;
-        border-top: 0.0625rem solid lightgrey;
+        border-top: 0.0625rem solid $silver;
         padding-top: 1rem;
-        color: lightgray;
+        color: $silver;
         text-transform: uppercase;
         font-weight: 400;
 

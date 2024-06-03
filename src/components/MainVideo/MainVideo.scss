@@ -1,4 +1,5 @@
 @import '/src/styles/variables.scss';
+@import '/src/styles/typography.scss';
 
 .main-video {
     font-family: $font-family;
@@ -9,7 +10,7 @@
     }
 
     &__title {
-        font-size: 24px;
+        font-size: 1.5rem;
         margin: .625rem 1rem;
     }
 
@@ -18,32 +19,62 @@
         justify-content: space-between;
         margin: .625rem 1rem;
         padding: 1rem 0;
-        border-top: 0.0625rem solid lightgrey;
-        border-bottom: 0.0625rem solid lightgrey;
+        border-top: 0.0625rem solid $silver;
+        border-bottom: 0.0625rem solid $silver;
+
+        @include tablet {
+            flex-direction: row;
+            align-items: flex-start;
+            border-top: 0;
+            padding: 0;
+        }
+
+        @include desktop {
+            flex-direction: row;
+            align-items: flex-start;
+            border-top: 0;
+            padding: 0;
+        }
     }
+
 
     &__info,
     &__stats {
+        gap: 1rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        margin-bottom: 1rem;
+
+        @include tablet {
+            display: flex;
+            gap: 1rem;
+            flex-direction: row;
+            margin-bottom: 1rem;
+        }
+        @include desktop{
+            display: flex;
+            gap: 1rem;
+            flex-direction: row;
+            margin-bottom: 1rem; 
+        }
     }
 
     &__channel {
-        margin: 5px 0;
+        margin: .3125rem 0;
         font-weight: 500;
     }
 
-    &__timestamp {
-        margin: 5px 0;
-        color: lightgray;
+    &__timestamp,
+    &__views,
+    &__likes {
+        margin: .3125rem 0;
+        color: $mercury;
     }
-
 
     &__stat {
         display: flex;
         align-items: center;
-        margin-right: 20px;
+        margin-right: 1.25rem;
 
         &:last-child {
             margin-right: 0;
@@ -51,18 +82,8 @@
     }
 
     &__icon {
-        // height: 24px;
-        margin-right: 8px;
-    }
-
-    &__views,
-    &__likes {
-        margin: 0;
-        font-family: Avenir Next;
-        font-size: 10px;
-        line-height: 1rem;
-        font-weight: 400;
-        color: lightgray;
+        height: 1.5rem;
+        margin-right: .5rem;
     }
 
     &__description {

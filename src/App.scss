@@ -1,0 +1,45 @@
+@import '/src/styles/variables.scss';
+@import '/src/styles/mixins.scss';
+
+.app {
+    display: flex;
+    flex-direction: column;
+
+    &__main-content {
+        flex: 1;
+    }
+
+    &__sidebar {
+        margin-top: 2rem;
+    }
+
+    @include tablet {
+        flex-direction: row;
+        align-items: flex-start;
+
+        &__main-content {
+            flex: 2;
+            margin-right: 2rem;
+        }
+
+        &__sidebar {
+            flex: 1;
+            margin-top: 0;
+        }
+    }
+
+    @include desktop {
+        flex-direction: row;
+        align-items: flex-start;
+
+        &__main-content {
+            flex: 3;
+            margin-right: 2rem;
+        }
+
+        &__sidebar {
+            flex: 1;
+            margin-top: 0;
+        }
+    }
+}

@@ -32,4 +32,3 @@ function MainVideo({ video }) {
 }
 
 export default MainVideo;
-

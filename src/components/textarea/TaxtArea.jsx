@@ -11,8 +11,10 @@ function TaxtArea() {
                     <div className="textarea__form-container">
                         <img src="./src/assets/Images/Mohan-muruge.jpg" alt="Artist-Image" className="textarea__avatar" />
                         <form id="commentForm" className="textarea__form">
-                            <label htmlFor="comment" className="textarea__label">join the conversation</label>
-                            <textarea id="comment" className="textarea__textarea" placeholder="Add a new comment" required></textarea>
+                            <div>
+                                <label htmlFor="comment" className="textarea__label">join the conversation</label>
+                                <textarea id="comment" className="textarea__textarea" placeholder="Add a new comment" required></textarea>
+                            </div>
                             <button type="submit" className="textarea__button">
                                 <img src={addCommentIcon} alt="Add Comment Icon" className="textarea__icon" />
                                 <span>Comment</span>
