@@ -1,0 +1,8 @@
+@import '/src/styles/variables.scss';
+@import '/src/styles/typography.scss';
+
+.view{
+    @include desktop{
+        display: flex;
+    }
+}
