@@ -4,7 +4,7 @@ import './Sidebar.scss';
 function Sidebar({ videos, currentVideoId, onVideoSelect }) {
     return (
         <div className="sidebar">
-            <h2 className="sidebar__title">Next Videos</h2>
+            <h2 className="sidebar__title">Next Video</h2>
             <ul className="sidebar__list">
                 {videos
                     .filter(video => video.id !== currentVideoId)
