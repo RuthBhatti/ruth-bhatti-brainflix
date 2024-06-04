@@ -1,8 +1,21 @@
 @import '/src/styles/variables.scss';
 @import '/src/styles/typography.scss';
 
-.view{
-    @include desktop{
+.view {
+    @include desktop {
         display: flex;
+        justify-content: center;
+    }
+}
+
+.app__details {
+    @include desktop {
+        border-left: 0.0625rem solid #AFAFAF;
+    }
+}
+
+.app__content {
+    @include desktop {
+        width: 50%;
     }
 }
