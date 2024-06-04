@@ -5,7 +5,7 @@ import addCommentIcon from '../../assets/Icons/add_comment.svg';
 function TaxtArea() {
     return (
         <>
-            <h2 className="comments__header"> Comments </h2>
+            <h2 className="comments__header"> 3 Comments </h2>
             <div className="comments__section">
                 <section className="comments">
                     <div className="textarea__form-container">

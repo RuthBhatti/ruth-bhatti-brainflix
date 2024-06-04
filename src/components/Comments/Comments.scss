@@ -20,12 +20,12 @@
     &__item {
         display: flex;
         margin-bottom: .625rem;
-        border-top: .0625rem solid lightgrey;
+        border-top: .0625rem solid $mercury;
         padding-top: 1rem;
     }
 
     &__avatar {
-        background-color: #c1c1c1;
+        background-color: $mercury;
         padding: 1rem;
         margin-right: .625rem;
         width: 2rem;
@@ -44,7 +44,7 @@
 
     &__date {
         font-size: .75rem;
-        color: gray;
+        color: $silver;
         margin-bottom: 1rem;
         margin-top: 0;
     }
