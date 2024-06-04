@@ -1,8 +1,18 @@
 @import './variables';
 
-body {
-    font-family: $font-family;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+$font-family: 'Avenir Next', sans-serif;
+$font-weight-regular: 400;
+$font-weight-demi: 600;
+$font-weight-bold: 700;
+$font-size-page-header: 2.0625rem;
+$line-height-page-header: 2.75rem;
+$font-size-section-header: .75rem;
+$line-height-section-header: 1.25rem;
+$font-size-subheader: .875rem;
+$line-height-subheader: 1.375rem;
+$font-size-body-copy: .75rem;
+$line-height-body-copy: 1.25rem;
+$font-size-labels-buttons: .75rem;
+$line-height-labels-buttons: 1.25rem;
+$font-size-button: 1.125rem;
+

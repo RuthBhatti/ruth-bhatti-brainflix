@@ -1,0 +1,20 @@
+@import '/src/styles/variables.scss';
+@import '/src/styles/typography.scss';
+
+.view{
+    @include desktop{
+        display: flex;
+    }
+}
+.app{
+    &__content{
+        @include desktop{
+            width: 50%;
+        }
+    }
+    &__details{
+        @include desktop{
+            width:50%;
+        }
+    }
+}

@@ -1,12 +1,10 @@
 import React from 'react';
 import './MainVideo.scss';
+import VideoPlayer from '../VideoPlayer/VideoPlayer';
 
 function MainVideo({ video }) {
     return (
         <div className="main-video">
-            <video className="main-video__player" controls poster={video.image}>
-                <source src={video.video} type="video/mp4" />
-            </video>
             <h1 className="main-video__title">{video.title}</h1>
             <div className="main-video__details">
                 <div className="main-video__info">
