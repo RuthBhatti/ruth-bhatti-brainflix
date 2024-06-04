@@ -12,9 +12,6 @@
         list-style: none;
         margin: 1rem;
         padding: 0;
-        @include desktop{
-            width: 50%;
-        }
     }
 
     &__item {
