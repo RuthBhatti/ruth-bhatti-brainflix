@@ -6,15 +6,3 @@
         display: flex;
     }
 }
-.app{
-    &__content{
-        @include desktop{
-            width: 50%;
-        }
-    }
-    &__details{
-        @include desktop{
-            width:50%;
-        }
-    }
-}
