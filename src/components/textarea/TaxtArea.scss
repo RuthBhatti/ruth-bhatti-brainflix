@@ -6,6 +6,10 @@
     font-weight: 500;
     text-align: left;
     margin: 1rem;
+
+    @include desktop {
+        margin: 0;
+    }
 }
 
 .comments__section {
@@ -118,6 +122,7 @@
     font-weight: 500;
     height: 3.125rem;
     margin-left: 1rem;
+
 
     .textarea__button-icon {
         height: 1.25rem;
