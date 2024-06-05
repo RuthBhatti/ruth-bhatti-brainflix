@@ -4,6 +4,9 @@
 .sidebar {
     font-family: $font-family;
     margin: 0.625rem 1rem;
+    @include desktop{
+        width: 71%;
+    }
 
 
 
@@ -36,7 +39,7 @@
         cursor: pointer;
 
         @include desktop {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
 
         }
     }

@@ -2,41 +2,37 @@
 
 .video-player {
     width: 100%;
+    background-color: currentColor;
 
     &__player {
         width: 100%;
         height: auto;
 
         @include desktop {
-            aspect-ratio: 16/9;
+            background-color: black;
+            aspect-ratio: 16 / 9;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
         }
+
+
     }
 }
 
-.video-player {
-    @include desktop {
-        background-color: black;
-        aspect-ratio: 16 / 9;
-        width: 100%;
-        /* You can adjust the width as needed */
-        max-width: 800px;
-        /* Example maximum width */
-        margin: 0 auto;
-        /* Center the container */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-}
 
-.video-player__player {
-    @include desktop {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        /* Ensures the video maintains its aspect ratio */
-        background-color: black;
-        /* Fallback background for the video */
-    }
-}
+
+    // .video-player__player {
+    //     @include desktop {
+    //         width: 100%;
+    //         height: 100%;
+    //         object-fit: contain;
+    //         /* Ensures the video maintains its aspect ratio */
+    //         background-color: black;
+    //         /* Fallback background for the video */
+    //     }
+    // }
