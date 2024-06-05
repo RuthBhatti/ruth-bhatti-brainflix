@@ -1,0 +1,166 @@
+.upload-video {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+
+        &__logo img {
+            height: 40px;
+        }
+
+        &__search input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        &__upload-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        &__profile img {
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+
+    .upload-video__main {
+        padding: 20px;
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .upload-video__form {
+            display: flex;
+            justify-content: space-between;
+
+            .upload-video__thumbnail img {
+                width: 300px;
+                height: auto;
+            }
+
+            .upload-video__details {
+                flex-grow: 1;
+                margin-left: 20px;
+
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        .upload-video__actions {
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+
+            .cancel-btn {
+                background-color: transparent;
+                color: #007bff;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+
+            .publish-btn {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    @media (max-width: 1280px) {
+        .upload-video__main .upload-video__form {
+            flex-direction: column;
+
+            .upload-video__details {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .header {
+            flex-direction: column;
+            align-items: flex-start;
+
+            &__search {
+                margin-top: 10px;
+                width: 100%;
+            }
+
+            &__upload-btn {
+                margin-top: 10px;
+                width: 100%;
+            }
+
+            &__profile {
+                margin-top: 10px;
+            }
+        }
+
+        .upload-video__main {
+            padding: 10px;
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .upload-video__form {
+                .upload-video__thumbnail img {
+                    width: 100%;
+                }
+            }
+
+            .upload-video__actions {
+                flex-direction: column;
+
+                .cancel-btn,
+                .publish-btn {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .header {
+            &__logo img {
+                height: 30px;
+            }
+
+            &__search input {
+                width: 100%;
+            }
+        }
+
+        .upload-video__main {
+            padding: 5px;
+
+            h1 {
+                font-size: 18px;
+            }
+        }
+    }
+}
