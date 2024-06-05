@@ -1,6 +1,160 @@
 @import '/src/styles/variables.scss';
 @import '/src/styles/typography.scss';
 
+.comments__header {
+    font-family: $font-family;
+    font-weight: 500;
+    text-align: left;
+    margin: 1rem;
+
+    @include desktop {
+        margin: 0;
+        padding: 1.5rem 0;
+    }
+}
+
+.comments__section {
+    margin: 1rem;
+
+    @include desktop {
+        margin: 0;
+    }
+}
+
+.textarea__form-container {
+    font-family: $font-family;
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+    margin: 1rem 1rem;
+
+    @include tablet {
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    @include desktop {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+.textarea__avatar {
+    font-family: $font-family;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+
+    @include tablet {
+        height: 3.125rem;
+        width: 3.125rem;
+    }
+
+    @include desktop {
+        height: 3.125rem;
+        width: 3.125rem;
+    }
+}
+
+.textarea__form {
+    font-family: $font-family;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        flex-direction: row;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    @include desktop {
+        flex-direction: row;
+        align-items: flex-end;
+        width: 100%;
+    }
+}
+
+.textarea__label {
+    font-family: $font-family;
+    display: block;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    color: $silver;
+
+    @include tablet {
+        margin-bottom: 0;
+    }
+
+    @include desktop {
+        margin-bottom: 0;
+    }
+}
+
+.textarea__textarea {
+    font-family: $font-family;
+    height: 8rem;
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: .3125rem;
+    border-color: #f1f1f1;
+    background-color: #f1f1f1;
+
+    @include tablet {
+        width: 25rem;
+        height: 1rem;
+        margin: 0;
+    }
+
+    @include desktop {
+        width: 22rem;
+        height: 1.5rem;
+        margin: 0;
+    }
+}
+
+.textarea__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem 1.25rem;
+    color: $white;
+    background-color: $brainflix-blue;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 3.125rem;
+
+    .textarea__button-icon {
+        fill: $white;
+        /* Icon fill color */
+        height: 1.25rem;
+        margin-right: .625rem;
+    }
+
+    &:hover {
+        background-color: $brainflix-dark-blue;
+        color: $white;
+    }
+
+    @include tablet {
+        width: 15rem;
+        flex-shrink: 0;
+        margin-left: 1rem;
+    }
+
+    @include desktop {
+        width: 11rem;
+        flex-shrink: 0;
+        margin-left: 1rem;
+    }
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -64,10 +218,17 @@
         font-size: 1rem;
         font-weight: 300;
         width: 99%;
-        @include tablet{
+
+        &:hover {
+            background-color: $brainflix-dark-blue;
+            color: $white;
+        }
+
+        @include tablet {
             gap: 0;
         }
-        @include desktop{
+
+        @include desktop {
             gap: 0;
         }
 
@@ -168,7 +329,8 @@
 
         &__search-container {
             max-width: 20rem;
-            height: 2rem;        }
+            height: 2rem;
+        }
 
         &__right {
             justify-content: flex-end;

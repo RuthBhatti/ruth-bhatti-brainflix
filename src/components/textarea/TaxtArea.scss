@@ -100,8 +100,8 @@
     padding: 0.5em;
     margin-bottom: 1em;
     border-radius: .3125rem;
-    border-color: $mercury;
-    background-color: $mercury;
+    border-color: #f1f1f1;
+    background-color: #f1f1f1;
 
     @include tablet {
         width: 25rem;
@@ -130,10 +130,15 @@
     font-weight: 500;
     height: 3.125rem;
 
-
     .textarea__button-icon {
+        fill: $white;
         height: 1.25rem;
         margin-right: .625rem;
+    }
+
+    &:hover {
+        background-color: $brainflix-dark-blue;
+        color: $white;
     }
 
     @include tablet {
