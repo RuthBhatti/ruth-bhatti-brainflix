@@ -34,6 +34,11 @@
         display: flex;
         margin-bottom: .625rem;
         cursor: pointer;
+
+        @include desktop {
+            margin-bottom: 1rem;
+
+        }
     }
 
     &__thumbnail {
