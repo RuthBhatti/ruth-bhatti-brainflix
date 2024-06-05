@@ -157,16 +157,18 @@
     .header {
         flex-direction: row;
         justify-content: space-between;
-        margin: 0 6.6rem;
+        margin: 0 7.7rem;
+        padding: 1rem 0;
 
         &__center {
             flex-grow: 1;
-            margin: 0 1.25rem;
+            margin: 0 1rem;
+            justify-content: flex-end;
         }
 
         &__search-container {
-            max-width: 31.25rem;
-        }
+            max-width: 20rem;
+            height: 2rem;        }
 
         &__right {
             justify-content: flex-end;
