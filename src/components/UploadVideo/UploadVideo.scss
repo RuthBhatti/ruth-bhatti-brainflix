@@ -4,8 +4,8 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-        background-color: #fff;
-        border-bottom: 1px solid #ccc;
+        background-color: $white;
+        border-bottom: 1px solid $silver;
 
         &__logo img {
             height: 40px;
@@ -13,13 +13,13 @@
 
         &__search input {
             padding: 5px;
-            border: 1px solid #ccc;
+            border: 1px solid $silver;
             border-radius: 4px;
         }
 
         &__upload-btn {
-            background-color: #007bff;
-            color: #fff;
+            background-color: $primary-color;
+            color: $white;
             border: none;
             padding: 10px 20px;
             border-radius: 4px;
@@ -58,7 +58,7 @@
                     width: 100%;
                     padding: 10px;
                     margin-bottom: 10px;
-                    border: 1px solid #ccc;
+                    border: 1px solid $mercury;
                     border-radius: 4px;
                 }
             }
@@ -71,15 +71,15 @@
 
             .cancel-btn {
                 background-color: transparent;
-                color: #007bff;
+                color: $primary-color;
                 border: none;
                 padding: 10px 20px;
                 cursor: pointer;
             }
 
             .publish-btn {
-                background-color: #007bff;
-                color: #fff;
+                background-color: $primary-color;
+                color: $white;
                 border: none;
                 padding: 10px 20px;
                 border-radius: 4px;

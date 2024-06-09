@@ -1,6 +1,22 @@
 @import '/src/styles/variables.scss';
-@import '/src/styles/typography.scss';
 
+.app {
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.view {
+    @include desktop {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.app__details {
+    border-left: .0625rem solid $mercury;
+}
 
 .view {
     @include desktop {

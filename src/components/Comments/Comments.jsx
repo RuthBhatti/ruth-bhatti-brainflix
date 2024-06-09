@@ -2,6 +2,10 @@ import React from 'react';
 import './Comments.scss';
 
 function Comments({ comments }) {
+    if (!comments || comments.length === 0) {
+        return <div>No comments available</div>;
+    }
+
     return (
         <div className="comments">
             <h2 className="comments__title"></h2>

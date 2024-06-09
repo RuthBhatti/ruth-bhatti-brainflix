@@ -1,5 +1,6 @@
 import React from 'react';
 import './Sidebar.scss';
+import { Link } from 'react-router-dom';
 
 function Sidebar({ videos, currentVideoId, onVideoSelect }) {
     return (
@@ -9,13 +10,15 @@ function Sidebar({ videos, currentVideoId, onVideoSelect }) {
                 {videos
                     .filter(video => video.id !== currentVideoId)
                     .map(video => (
-                        <li key={video.id} className="sidebar__item" onClick={() => onVideoSelect(video.id)}>
-                            <img src={video.image} alt={video.title} className="sidebar__thumbnail" />
-                            <div className="sidebar__details">
-                                <h3 className="sidebar__titles">{video.title}</h3>
-                                <p className="sidebar__channel">{video.channel}</p>
-                            </div>
-                        </li>
+                        <Link to={`/videos/${video.id}`} key={video.id}>
+                            <li className="sidebar__item">
+                                <img src={video.image} alt={video.title} className="sidebar__thumbnail" />
+                                <div className="sidebar__details">
+                                    <h3 className="sidebar__titles">{video.title}</h3>
+                                    <p className="sidebar__channel">{video.channel}</p>
+                                </div>
+                            </li>
+                        </Link>
                     ))}
             </ul>
         </div>

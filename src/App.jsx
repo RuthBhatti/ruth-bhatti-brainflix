@@ -1,38 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage/HomePage';
+import UploadVideo from './pages/VideoUploadPage/VideoUploadPage'; 
 import Header from './components/Header/Header';
-import MainVideo from './components/MainVideo/MainVideo';
-import Sidebar from './components/Sidebar/Sidebar';
-import Comments from './components/Comments/Comments';
-import videoDetails from './data/video-details.json';
-import TaxtArea from './components/textarea/TaxtArea';
-import VideoPlayer from './components/VideoPlayer/VideoPlayer';
-import './App.scss';
 
 function App() {
-  const [currentVideo, setCurrentVideo] = useState(videoDetails[0]);
-
-  const handleVideoSelect = (id) => {
-    const selectedVideo = videoDetails.find(video => video.id === id);
-    setCurrentVideo(selectedVideo);
-  };
-
   return (
-    <div className="app">
+    <BrowserRouter>
       <Header />
-      <VideoPlayer video={currentVideo} />
-      <div className='view'>
-        <div className="app__content">
-          <MainVideo video={currentVideo} />
-          <TaxtArea />
-          <Comments comments={currentVideo.comments} />
-        </div>
-        <div className="app__details">
-          <Sidebar videos={videoDetails} currentVideoId={currentVideo.id} onVideoSelect={handleVideoSelect} />
-        </div>
-      </div>
-    </div>
+      <Routes>
+        <Route path="/" exact element={<HomePage />} />
+        <Route path="/videos/:videoId" element={<HomePage />} />
+        <Route path="/upload" element={<UploadVideo />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
 

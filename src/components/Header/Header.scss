@@ -100,8 +100,8 @@
     padding: 0.5em;
     margin-bottom: 1em;
     border-radius: .3125rem;
-    border-color: #f1f1f1;
-    background-color: #f1f1f1;
+    border-color: $mercury;
+    background-color: $mercury;
 
     @include tablet {
         width: 25rem;
@@ -132,7 +132,6 @@
 
     .textarea__button-icon {
         fill: $white;
-        /* Icon fill color */
         height: 1.25rem;
         margin-right: .625rem;
     }
@@ -143,7 +142,7 @@
     }
 
     @include tablet {
-        width: 15rem;
+        width: 14rem;
         flex-shrink: 0;
         margin-left: 1rem;
     }
@@ -175,8 +174,10 @@
     }
 
     &__right {
-        display: flex;
-        align-items: center;
+        @include tablet {
+            display: flex;
+            align-items: center;
+        }
     }
 
     &__logo {
@@ -186,7 +187,8 @@
     &__search-container {
         display: flex;
         align-items: center;
-        background-color: #f1f1f1;
+        border: 1px solid $mercury;
+        background-color: #f8f8f8;
         border-radius: .25rem;
         padding: .3125rem .625rem;
         flex-grow: 1;
@@ -333,7 +335,11 @@
         }
 
         &__right {
-            justify-content: flex-end;
+            display: flex;
         }
     }
+}
+
+.button-lines {
+    text-decoration: none;
 }

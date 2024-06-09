@@ -21,7 +21,7 @@
     }
 }
 
-.textarea__form-container {
+.textarea__form-container1 {
     font-family: $font-family;
     display: flex;
     align-items: flex-start;
@@ -58,7 +58,7 @@
     }
 }
 
-.textarea__form {
+.textarea__form3 {
     font-family: $font-family;
     flex-grow: 1;
     display: flex;
@@ -77,12 +77,13 @@
     }
 }
 
-.textarea__label {
+.textarea__label1 {
     font-family: $font-family;
     display: block;
     margin-bottom: 0.5em;
     text-transform: uppercase;
     color: $silver;
+    font-size: .9rem;
 
     @include tablet {
         margin-bottom: 0;
@@ -93,15 +94,15 @@
     }
 }
 
-.textarea__textarea {
+.textarea__textarea2 {
     font-family: $font-family;
     height: 8rem;
     width: 100%;
     padding: 0.5em;
     margin-bottom: 1em;
     border-radius: .3125rem;
-    border-color: #f1f1f1;
-    background-color: #f1f1f1;
+    border-color: $mercury;
+    background-color: #f8f8f8;
 
     @include tablet {
         width: 25rem;
@@ -136,13 +137,9 @@
         margin-right: .625rem;
     }
 
-    &:hover {
-        background-color: $brainflix-dark-blue;
-        color: $white;
-    }
 
     @include tablet {
-        width: 15rem;
+        width: 14rem;
         flex-shrink: 0;
         margin-left: 1rem;
     }
@@ -151,5 +148,9 @@
         width: 11rem;
         flex-shrink: 0;
         margin-left: 1rem;
+    }
+        &:hover {
+        background-color: $brainflix-dark-blue;
+        color: $white;
     }
 }

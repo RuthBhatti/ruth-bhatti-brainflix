@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.scss';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/Logo/BrainFlix-logo.svg';
 import searchIcon from '../../assets/Icons/search.svg';
 import uploadIcon from '../../assets/Icons/upload.svg';
@@ -9,7 +10,9 @@ function Header() {
     return (
         <header className="header">
             <div className="header__left">
-                <img src={logo} alt="BrainFlix Logo" className="header__logo" />
+                <Link to="/">
+                    <img src={logo} alt="BrainFlix Logo" className="header__logo" />
+                </Link>
             </div>
             <div className="header__center">
                 <div className="header__search-container">
@@ -19,10 +22,12 @@ function Header() {
                 <img src={profileImage} alt="Profile" className="header__profile--mobile" />
             </div>
             <div className="header__right">
-                <button className="header__button">
-                    <img src={uploadIcon} alt="Upload Icon" className="header__upload-icon" />
-                    <span className="header__button-text">UPLOAD</span>
-                </button>
+                <Link className='button-lines' to="/upload">
+                    <button className="header__button">
+                        <img src={uploadIcon} alt="Upload Icon" className="header__upload-icon" />
+                        <span className="header__button-text">UPLOAD</span>
+                    </button>
+                </Link>
                 <img src={profileImage} alt="Profile" className="header__profile" />
             </div>
         </header>
@@ -30,5 +35,3 @@ function Header() {
 }
 
 export default Header;
-
-

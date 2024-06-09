@@ -1,17 +1,19 @@
 @import '/src/styles/variables.scss';
 @import '/src/styles/typography.scss';
 
+@import '/src/styles/variables.scss';
+@import '/src/styles/typography.scss';
+
 .sidebar {
     font-family: $font-family;
     margin: 0.625rem 1rem;
-    @include desktop{
+
+    @include desktop {
         width: 71%;
     }
 
-
-
     &__title {
-        font-size: .9375rem;
+        font-size: $font-size-subheader;
         margin-bottom: .625rem;
         border-top: 0.0625rem solid $silver;
         padding-top: 1rem;
@@ -23,8 +25,6 @@
             border-top: none;
             padding-top: 0;
         }
-
-
     }
 
     &__list {
@@ -39,8 +39,7 @@
         cursor: pointer;
 
         @include desktop {
-            margin-bottom: .8rem;
-
+            margin-bottom: 1rem;
         }
     }
 
@@ -57,14 +56,28 @@
         flex-direction: column;
     }
 
+    &__titles,
+    &__channel {
+        color: $brainflix-black; 
+        text-decoration: none; 
+    }
+
+    a {
+        text-decoration: none; 
+
+        &:hover .sidebar__titles,
+        &:hover .sidebar__channel {
+            text-decoration: none; 
+        }
+    }
+
     &__titles {
-        font-size: .75rem;
+        font-size: $font-size-section-header;
         font-weight: 500;
         margin: 0;
     }
 
     &__channel {
-        font-size: .875rem;
+        font-size: $font-size-subheader;
     }
-
-}
+}   
