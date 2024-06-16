@@ -8,8 +8,7 @@ import TaxtArea from '../../components/TextArea/TextArea';
 import Comments from '../../components/Comments/Comments';
 import './HomePage.scss';
 
-const API_URL = 'https://unit-3-project-api-0a5620414506.herokuapp.com';    
-const API_KEY = '4fe3ee20-bb66-44f7-a6d5-eaf3775e37bd';
+const API_URL = 'http://localhost:8000';
 
 function HomePage() {
     const { videoId } = useParams();
@@ -19,7 +18,7 @@ function HomePage() {
     useEffect(() => {
         const fetchVideos = async () => {
             try {
-                const response = await axios.get(`${API_URL}/videos?api_key=${API_KEY}`);
+                const response = await axios.get(`${API_URL}/videos`);
                 setSideVideos(response.data);
             } catch (err) {
                 console.error('Error fetching videos:', err);
@@ -30,13 +29,12 @@ function HomePage() {
 
     useEffect(() => {
         const fetchVideoDetails = async () => {
-                try {
-                    const response = await axios.get(`${API_URL}/videos/${videoId ? videoId : `84e96018-4022-434e-80bf-000ce4cd12b8`}?api_key=${API_KEY}`);
-                    setMainVideo(response.data);
-                } catch (err) {
-                    console.error('Error fetching video details:', err);
-                }
-            
+            try {
+                const response = await axios.get(`${API_URL}/videos/${videoId ? videoId : `84e96018-4022-434e-80bf-000ce4cd12b8`}`);
+                setMainVideo(response.data);
+            } catch (err) {
+                console.error('Error fetching video details:', err);
+            }
         };
         fetchVideoDetails();
     }, [videoId]);
@@ -44,7 +42,7 @@ function HomePage() {
     if (!mainVideo) {
         return <div>Loading...</div>;
     }
-console.log(mainVideo)
+
     return (
         <div className="app">
             <VideoPlayer video={mainVideo} />

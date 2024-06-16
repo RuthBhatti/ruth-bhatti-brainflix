@@ -1,19 +1,28 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import './VideoUploadPage.scss';
 import thumbnail from '../../assets/Images/Upload-video-preview.jpg';
 import uploadIcon from '../../assets/Icons/publish.svg';
 
-const API_URL = 'https://unit-3-project-api-0a5620414506.herokuapp.com';
-const API_KEY = '4fe3ee20-bb66-44f7-a6d5-eaf3775e37bd';
+const API_URL = 'http://localhost:8000';
 
 function VideoUploadPage() {
     const navigate = useNavigate();
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        alert('Video uploaded!');
-        navigate('/');
+        const title = event.target.title.value;
+        const description = event.target.description.value;
+
+        try {
+            await axios.post(`${API_URL}/videos`, { title, description });
+            alert('Video uploaded!');
+            navigate('/');
+        } catch (error) {
+            console.error('Error uploading video:', error);
+            alert('Failed to upload video. Please try again.');
+        }
     };
 
     const handleCancel = () => {

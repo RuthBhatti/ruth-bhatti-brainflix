@@ -2,7 +2,7 @@ import React from 'react';
 import './Sidebar.scss';
 import { Link } from 'react-router-dom';
 
-function Sidebar({ videos, currentVideoId, onVideoSelect }) {
+function Sidebar({ videos, currentVideoId, }) {
     return (
         <div className="sidebar">
             <h2 className="sidebar__title">Next Video</h2>

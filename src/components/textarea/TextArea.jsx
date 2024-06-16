@@ -10,9 +10,9 @@ function TaxtArea() {
             <div className="comments__section">
                 <section className="comments">
                     <div className="textarea__form-container1">
-                        <img src={artistIcon} alt="Artist-Image" className="textarea__avatar" />
+                        <img src={artistIcon} alt="Artist-Image" className="textarea__avatar2" />
                         <form id="commentForm" className="textarea__form3">
-                            <div>
+                            <div className='textarea__title'>
                                 <label htmlFor="comment" className="textarea__label1">join the conversation</label>
                                 <textarea id="comment" className="textarea__textarea2" placeholder="Add a new comment" required></textarea>
                             </div>
