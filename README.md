@@ -1,4 +1,6 @@
-# 📺 BrainFlix
+<div align="center">
+  <h1>📺 BrainFlix</h1>
+</div>
 
 BrainFlix is an interactive and user-friendly video streaming platform developed using React, SCSS, JavaScript, and HTML. The platform features a responsive layout that adapts to various devices, ensuring a seamless user experience. Key functionalities include video playback, comment posting, and video uploads.
 
