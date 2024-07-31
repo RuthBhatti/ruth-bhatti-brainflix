@@ -6,11 +6,15 @@ BrainFlix is an interactive and user-friendly video streaming platform developed
 
 ## 🚀 Features
 
-- **🏠 Home Page:** Displays a list of videos.
-- **🎥 Video Details Page:** Shows video details along with comments.
-- **📤 Video Upload Page:** Allows users to upload new videos.
-- **📱 Responsive Design:** Adapts to various devices for a seamless experience.
-- **⚡ Dynamic Functionalities:** Includes video playback, comment posting, and video uploads.
+**🏠 Home Page:** Displays a list of videos.
+
+**🎥 Video Details Page:** Shows video details along with comments.
+
+**📤 Video Upload Page:** Allows users to upload new videos.
+
+**📱 Responsive Design:** Adapts to various devices for a seamless experience.
+
+**⚡ Dynamic Functionalities:** Includes video playback, comment posting, and video uploads.
 
 ## 🛠️ Getting Started
 
