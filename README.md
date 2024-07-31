@@ -56,11 +56,15 @@ The API provides endpoints for video data, including fetching video lists, video
 
 ## 🛠️ Technologies Used
 
-- **⚛️ React:** For building the user interface.
-- **⚡ Vite:** For fast development with HMR.
-- **🎨 SCSS:** For styling.
-- **💻 JavaScript:** For functionality.
-- **📝 HTML:** For structure.
+**⚛️ React:** For building the user interface.
+
+**⚡ Vite:** For fast development with HMR.
+
+**🎨 SCSS:** For styling.
+
+**💻 JavaScript:** For functionality.
+
+**📝 HTML:** For structure.
 
 ## 📦 Vite Plugins
 
